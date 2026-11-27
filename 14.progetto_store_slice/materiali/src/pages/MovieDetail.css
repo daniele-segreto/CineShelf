@@ -1,0 +1,73 @@
+.detail__back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  color: #f5c518;
+}
+
+.detail__back:hover {
+  text-decoration: underline;
+}
+
+.detail__layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 700px) {
+  .detail__layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detail__poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 12px;
+  background: #2a2f3f;
+}
+
+.detail__poster--placeholder {
+  display: grid;
+  place-items: center;
+  color: #7b8090;
+}
+
+.detail__title {
+  margin: 0;
+  font-size: 2rem;
+  color: #f4f5f7;
+}
+
+.detail__year {
+  font-weight: 400;
+  color: #a0a4ad;
+}
+
+.detail__meta {
+  margin: 0.5rem 0 1.25rem;
+  color: #a0a4ad;
+}
+
+.detail__plot {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.detail__credits {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.4rem 1rem;
+  margin-top: 1.5rem;
+}
+
+.detail__credits dt {
+  color: #f5c518;
+  font-weight: 600;
+}
+
+.detail__credits dd {
+  margin: 0;
+}
